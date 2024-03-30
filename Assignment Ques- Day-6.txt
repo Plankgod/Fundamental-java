@@ -1,0 +1,106 @@
+﻿Fundamentals of  Java
+
+
+Ans no. 1: A programming language is a formal system of symbols,rules and conventions used to write instructions for computers.These instructions, known as code, expressed in such a way for computers to understand and execute.
+
+
+Ans no. 2: Programming language is very important in our digital world because computers operate at only low-level,and understand bits and bytes. It acts as a bridge for computers,which express our intentions in a  more human-friendly way.
+       Programming languages make it efficient to write code. Instead of dealing with raw binary, we use high-level constructs that abstract away low-level details.Programming enhances logical thinking and problem-solving skills. It empowers us to create innovative solutions.Whether it’s building apps, automating tasks, or designing games, programming fuels our creativity.We use programming to automate repetitive tasks, analyze data, and interpret information.A compiler translates human-readable code into machine code, enabling computers to execute our instructions.
+
+
+Ans no. 3: Java is a versatile and widely-used programming language with several notable features that contribute to its popularity. Some of the known features are:
+* Java’s syntax is clean, easy to understand, and based on C++.
+* It avoids complex and rarely-used features, making it beginner-friendly.
+* Automatic Garbage Collection simplifies memory management.
+* Object-Oriented:
+   * Everything in Java is an object.
+   * Follows principles of OOP (Object-Oriented Programming):
+      * Inheritance: Allows creating new classes based on existing ones.
+      * Polymorphism: Enables multiple forms of a method or class.
+      * Abstraction: Hides implementation details.
+      * Encapsulation: Bundles data and methods into a single unit (class).
+
+
+* Platform Independent:
+   * Write once, run anywhere (WORA) principle.
+   * Java code compiles into bytecode, which runs on any platform with a Java Virtual Machine (JVM).
+   * Supports multiple platforms like Windows, Linux, and macOS.
+* Secured:
+   * No explicit pointers, reducing vulnerabilities.
+   * Classloader separates local and network classes.
+   * Bytecode Verifier ensures code integrity.
+* Robust:
+   * Strong type-checking during compilation.
+   * Exception handling for graceful error management.
+   * Memory management through garbage collection.
+* High Performance:
+   * Compiled to efficient bytecode.
+   * Just-in-time (JIT) compilation optimizes execution.
+* Multithreaded:
+   * Supports concurrent execution with threads.
+   * Efficiently handles multiple tasks simultaneously.
+* Distributed:
+   * Facilitates network programming.
+   * RMI (Remote Method Invocation) for distributed applications.
+* Dynamic:
+   * Dynamic class loading at runtime.
+   * Reflection allows inspecting and modifying classes during execution.
+
+
+Ans no. 4:In programming, an object is a fundamental concept in object-oriented programming (OOP).
+* An object is an instance of a class.
+* When a class is defined, no memory is allocated. However, when an object is instantiated (i.e., created), memory is allocated for it.
+* An object combines data (attributes) and code (methods) to manipulate that data.
+
+
+Ans no. 5: In programming, a class serves as a blueprint or template for creating objects.A class provides the initial values for state (also known as member variables or attributes) and the implementations of behavior (also known as member functions or methods).
+* When an object is created using a constructor of the class, it becomes an instance of that class.
+* The instance variables hold specific data for each object, while class variables are shared across all instances.
+Ans no. 6: In Java, the main() method serves as the entry point for any Java application. When you run a Java program, the Java Virtual Machine (JVM) looks for the main method to start executing the program.
+1. Method Signature:
+* The main method must have a specific signature to be recognized by the JVM:
+* Java
+public static void main(String[] args) {
+    // Code to be executed
+}
+
+
+
+
+
+
+
+
+
+
+   * Key points:
+      * public: It is an access specifier. We use public so that the JVM can identify the execution point of the program.
+      * static: The main method is called without creating an object. Static methods don’t require an instance.
+      * void: Indicates that the main method does not return any value.
+      * String[] args: Accepts data from the user. It holds command-line arguments as an array of strings.
+1. Execution Process:
+   * First, the JVM executes any static blocks (if present).
+   * Next, it looks for the main method.
+   * If the main method is not found, the program won’t run.
+   * The args parameter allows passing arguments to the program during startup.
+Example
+
+
+class Demo {
+    static { // Static block
+        System.out.println("Static block");
+    }
+
+
+    public static void main(String[] args) { // Static method
+        System.out.println("Static method");
+    }
+}
+Output:
+Static block
+Static method
+
+
+Error Without main Method:
+   1. If a program lacks the main method, it will compile but not run.
+   2. JVM always looks for the main method with a String[] parameter.
